@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Factory Design Pattern</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<h1>Factory Design Pattern</h1>
+	<br>
+	<article>
+		<h2>What is a factory method?</h2>
+		<p>The factory method is a creational design pattern used to create concrete implementations of a common interface.<br>
+		It separates the process of creating an object from the code that depends on the interface of the object.<br>
+		Objects are created without exposing the logic to the client, and for creating the new type of object, the client uses the same common interface.</p>
+		<img src= "interface.png" alt = "image of factory method and interface">
+		<p>The "Calculation" class is the common interface that is extended to suit the different operations which includes, addition, subtraction, multiplication, and division.<br>
+		The "create" method in Calculation is the factory method. It can be used by any of the calculation objects and when it is called, the object is instantiated with the values from<br>
+		the values in the tuple. With the given values, an Addition object will calculate the result by adding the values together. The logic of adding values together is hidden from the user,<br>
+		and he/she isn't required to know how to perform the respective operation but rather what operation and what values.</p>
+
+	</article>
+</html>
